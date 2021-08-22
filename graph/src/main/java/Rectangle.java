@@ -1,9 +1,9 @@
-public class Rectangle extends geometricObject implements  Comparable<Rectangle>{
-    private double width;
+public class Rectangle extends geometricObject implements  Comparable<Rectangle>{  //通过extends创建一个类的子类；implements声明自己使用一个或多个接口
+    private double width;    //private 用于指定私有成员
     private double height;
     public Rectangle(){
     }
-    public Rectangle(double width,double height){
+    public Rectangle(double width,double height){   //public 用于指定公有成员
         this.height = height;
         this.width = width;
     }
@@ -28,7 +28,7 @@ public class Rectangle extends geometricObject implements  Comparable<Rectangle>
         return -1;
         }
      */
-    public String toString(){
+    public String toString(){ //这个函数能主动调用toString库函数，用toString函数产生的字符串来输出要输出的东西
         return "矩形的高："+ height +"矩形的宽："+ width +" 面积:"+getArea() + " 周长："+ getPerimeter() +"\n";
     }
 }

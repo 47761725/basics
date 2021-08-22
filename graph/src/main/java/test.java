@@ -19,7 +19,7 @@ public class test {
                 new Circle(1.9),
         };
         Arrays.sort(cs);//对圆面积进行升序排序
-        for (Circle c: cs){
+        for (Circle c:cs){
             System.out.print(c + "");
             System.out.println();
         }//以圆面积升序输出矩形面积数组
