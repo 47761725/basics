@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单元素</title>
+</head>
+<body>
+     <form action="test.php" method="get" enctype="application/x-www-form-urlencoded">
+         name:<input type="text" name="fname" placeholder="请输入用户名"><br>
+         gender:男<input type="radio" name="gender" />
+                女<input type="radio" name="gender" /><br>
+         <input type="submit" value="确认">
+     </form>
+</body>
+</html>
+<!--
+action:一个处理这个form信息的程序所在的URL
+method:规定用于发送表单数据的HTTP方法，可能的值有：
+       post：指的是HTTP POST方法；表单数据会包含在表单体内然后发送给服务器
+       get：指的是HTTP GET方法；表单数据会附加在action属性的URL中，并以'?'作为分隔符，然后这样得到的URL再发送给服务器
+     post和get的区别post:将表单数据附加到 HTTP 请求的body 内（数据不显示在URL中）没有长度限制，通过 POST 提交的表单不能加入书签
+                   get:将表单数据以名称/值对的形式附加到URL中，URL 的长度是有限的（大约 3000 字符），绝不要使用 GET 来发送敏感数据！（在 URL 中是可见的）
+                        对于用户希望加入书签的表单提交很有用，GET 更适用于非安全数据，比如在 Google 中查询字符串
+     enctype：当method属性值为post时，enctype是提交form给服务器的内容的MIME类型
+            可能的取值：application/x-www-form-urlencoded 如果属性未指定时的默认值
+                      multipart/from-data 这个值用于一个type属性设置为“file”的<input>元素
+  	<form> 元素包含一个或多个如下的表单元素：
+		<input>
+		<textarea>
+		<button>
+		<select>
+		<option>
+		<optgroup>
+		<fieldset>
+		<label
+-->
