@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生基本信息</title>
+</head>
+<body>
+<h3>学生基本信息录入</h3>
+<form>
+    账&nbsp号:
+    <input type="text" name="username" size="20">
+    <br/>
+    <!--
+    text:定义单行文本输入字段，当用户需要在表单中输入字母、数字等内容时，就会用到文本域
+    password：定义密码字段，并且该字段不会明文显示，以*或圆点代替
+    -->
+    密&nbsp码:
+    <input type="password" name="password" size="20">
+    <br/>
+    性&nbsp别:
+    <input type="radio" name="sex" value="male">男
+    <input type="radio" name="sex" value="female">女
+    <br/>
+    <!--
+    radio 单选框表单控件，允许在多个选项中选择一个。
+    value表示选项
+    checkbox 可以在多个选项中选择多个
+    -->
+    兴&nbsp趣:
+    <input type="checkbox" name="interest" value="ball">打球
+    <input type="checkbox" name="interest" value="learning">学习
+    <input type="checkbox" name="interest" value="drawing">画画
+    <br/>
+    学&nbsp历
+    <select>
+        <option value="1">初中</option>
+        <option value="2">高中</option>
+        <option value="3">大学</option>
+        <option value="4">研究生</option>
+    </select>
+    <br/>
+    <p>简&nbsp介</p>
+    <textarea rows="10" cols="30">
+    </textarea>
+    <br/>
+    <p>照片上传:</p>
+    <input type="file">
+    <br/>
+    <br/>
+    <input type="submit" value="确定"/>
+    <input type="reset" value="重置"/>
+</form>
+</body>
+</html>
+<!--
+select 定义了下拉列表
+textarea 元素定义了多行文本输入域，允许用户通过rows和cols属性指定文本输入域的行数和列数
+submit 提交按钮
+reset
+-->
